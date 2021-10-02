@@ -1,18 +1,13 @@
 # Program to sort alphabetically the words form a string provided by the user
 
-my_str = "Hello this Is an Example With cased letters"
+# Define sentence
+word = "Hello this Is an Example With cased letters"
 
-# To take input from the user
-#my_str = input("Enter a string: ")
+# Split string by space, then sort the splitted string, and then put the string back together
+word = ' '.join( sorted( word.split() ) )
 
-# breakdown the string into a list of words
-words = my_str.split()
 
-# sort the list
-words.sort()
-
-# display the sorted words
-
-print("The sorted words are:")
-for word in words:
-   print(word)
+# word.split()    - Splits string by space
+# sorted()        - Sorts array of string
+# ' '.join()      - Joins the string array together with a space
+print(word)
